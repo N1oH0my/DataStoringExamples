@@ -31,6 +31,17 @@ android {
             )
         }
     }
+    configurations.all {
+        // 2 Define the resolution strategy in case of conflicts.
+        resolutionStrategy {
+            // Fail eagerly on version conflict (includes transitive dependencies),
+            // e.g., multiple different versions of the same dependency (group and name are equal).
+            failOnVersionConflict()
+
+            // Prefer modules that are part of this build (multi-project or composite build) over external modules.
+            preferProjectModules()
+        }
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
