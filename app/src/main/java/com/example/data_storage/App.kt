@@ -14,7 +14,7 @@ class App: Application() {
             AppDB::class.java,
             "DB.db"
         )
-
+        // some migrations
             .build()
     }
 
