@@ -3,7 +3,8 @@ package com.example.data_storage
 import android.app.Application
 import androidx.room.Room
 
-// to merge comment
+
+// new changes from merge branch
 class App: Application() {
 
 
