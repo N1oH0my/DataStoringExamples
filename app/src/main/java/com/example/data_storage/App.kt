@@ -4,8 +4,9 @@ import android.app.Application
 import androidx.room.Room
 
 // new c
-class App: Application() {
 
+// new changes from merge branch
+class App: Application() {
 
     lateinit var db: AppDB
     override fun onCreate() {
